@@ -4,7 +4,7 @@ import { Card, } from "semantic-ui-react";
 
 class Gamestart extends React.Component {
 
-
+ 
   render() {
     return (
      <Card>

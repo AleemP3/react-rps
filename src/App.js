@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Header } from "semantic-ui-react"; 
 import Gameoption from "./components/Gameoption";
-import Gamestart from "./components/Gamestart";
+
 
 class App extends React.Component {
   state = { gameOptions: [
@@ -14,11 +14,7 @@ class App extends React.Component {
   ]
 }
 
-  randChoice = () => {
-    let randChoice = this.state.gameOptions[Math.floor(Math.random()*this.state.gameOptions.length)].name;
-    return randChoice; 
 
-  }
 
   render() {
     return (
@@ -28,8 +24,7 @@ class App extends React.Component {
         <Container style={{textAlign: "Center"}}>Please select a picture to Start</Container>
         <br />
         <Gameoption gameOptions={this.state.gameOptions} playGame={this.game} 
-          randChoice={this.randomChoice}/>
-          <Gamestart randChoice={this.randChoice}/>
+          />
       </Container>
     );
   };

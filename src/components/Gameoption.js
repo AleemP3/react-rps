@@ -10,7 +10,7 @@ const Gameoption = (props) => (
     <Grid.Row>
       {props.gameOptions.map( options => (
         <Option key={options.id} {... options} playGame={props.playGame} 
-        randChoice={props.randChoice} gameOptions={props.gameOptions}/>
+         gameOptions={props.gameOptions}/>
         ))
       }
     </Grid.Row>
